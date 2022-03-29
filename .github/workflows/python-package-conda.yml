@@ -47,6 +47,8 @@ jobs:
               source py38-venv/bin/activate && \
               cd sdk/eventhub/azure-eventhub && \
               python setup.py install && \
+              pip install make && \
+              pip install cmake && \
               pip install -r dev_requirements.txt && \
               pytest && \
               deactivate'
